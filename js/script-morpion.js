@@ -22,9 +22,11 @@ function button1(){
     } else if(croix == true) {
         button1.classList.add("croix");
         croix = false;
+        victoire();
     }else if (croix == false){
         button1.classList.add("rond");
         croix=true;
+        victoire();
     }
 }
 function button2(){
@@ -35,9 +37,11 @@ function button2(){
     } else if(croix == true) {
         button1.classList.add("croix");
         croix = false;
+        victoire();
     }else if (croix == false){
         button1.classList.add("rond");
         croix=true;
+        victoire();
     }
 }
 function button3(){
@@ -48,9 +52,11 @@ function button3(){
     } else if(croix == true) {
         button1.classList.add("croix");
         croix = false;
+        victoire();
     }else if (croix == false){
         button1.classList.add("rond");
         croix=true;
+        victoire();
     }
 }
 function button4(){
@@ -61,9 +67,11 @@ function button4(){
     } else if(croix == true) {
         button1.classList.add("croix");
         croix = false;
+        victoire();
     }else if (croix == false){
         button1.classList.add("rond");
         croix=true;
+        victoire();
     }
 }
 function button5(){
@@ -74,9 +82,11 @@ function button5(){
     } else if(croix == true) {
         button1.classList.add("croix");
         croix = false;
+        victoire();
     }else if (croix == false){
         button1.classList.add("rond");
         croix=true;
+        victoire();
     }
 }
 function button6(){
@@ -87,9 +97,11 @@ function button6(){
     } else if(croix == true) {
         button1.classList.add("croix");
         croix = false;
+        victoire();
     }else if (croix == false){
         button1.classList.add("rond");
         croix=true;
+        victoire();
     }
 }
 function button7(){
@@ -100,9 +112,11 @@ function button7(){
     } else if(croix == true) {
         button1.classList.add("croix");
         croix = false;
+        victoire();
     }else if (croix == false){
         button1.classList.add("rond");
         croix=true;
+        victoire();
     }
 }
 function button8(){
@@ -113,9 +127,11 @@ function button8(){
     } else if(croix == true) {
         button1.classList.add("croix");
         croix = false;
+        victoire();
     }else if (croix == false){
         button1.classList.add("rond");
         croix=true;
+        victoire();
     }
 }
 function button9(){
@@ -126,22 +142,55 @@ function button9(){
     } else if(croix == true) {
         button1.classList.add("croix");
         croix = false;
+        victoire();
     }else if (croix == false){
         button1.classList.add("rond");
         croix=true;
+        victoire();
     }
 }
 
-var buttonA1 = document.getElementById("button1");
-var buttonA2 = document.getElementById("button2");
-var buttonA3 = document.getElementById("button3");
-var buttonB1 = document.getElementById("button4");
-var buttonB2 = document.getElementById("button5");
-var buttonB3 = document.getElementById("button6");
-var buttonC1 = document.getElementById("button7");
-var buttonC2 = document.getElementById("button8");
-var buttonC3 = document.getElementById("button9");
+const buttonA1 = document.getElementById("button1");
+const buttonA2 = document.getElementById("button2");
+const buttonA3 = document.getElementById("button3");
+const buttonB1 = document.getElementById("button4");
+const buttonB2 = document.getElementById("button5");
+const buttonB3 = document.getElementById("button6");
+const buttonC1 = document.getElementById("button7");
+const buttonC2 = document.getElementById("button8");
+const buttonC3 = document.getElementById("button9");
 
-if (buttonA1.className.match(" button rond") && buttonA2.className.match("button rond") && buttonA3.className.match("button rond") ){
-    alert("RondWin!");
+function victoire(){
+    if ( 
+        // RONDS HORIZONTAL
+         (buttonA1.className.match("rond") && buttonA2.className.match("rond") && buttonA3.className.match("rond")) ||
+         (buttonB1.className.match("rond") && buttonB2.className.match("rond") && buttonB3.className.match("rond")) ||
+         (buttonC1.className.match("rond") && buttonC2.className.match("rond") && buttonC3.className.match("rond")) ||
+        // RONDS VERTICAL
+         (buttonA1.className.match("rond") && buttonB1.className.match("rond") && buttonC1.className.match("rond")) ||
+         (buttonA2.className.match("rond") && buttonB2.className.match("rond") && buttonC2.className.match("rond")) ||
+         (buttonA3.className.match("rond") && buttonB3.className.match("rond") && buttonC3.className.match("rond")) ||
+        // RONDS DIAGONAL
+         (buttonA1.className.match("rond") && buttonB2.className.match("rond") && buttonC3.className.match("rond")) ||
+         (buttonA3.className.match("rond") && buttonB2.className.match("rond") && buttonC1.className.match("rond"))   ){
+
+            alert("Les ronds Gagnent !");
+            document.location.reload();
+        
+    } else if(
+        // CROIX HORIZONTAL
+         (buttonA1.className.match("croix") && buttonA2.className.match("croix") && buttonA3.className.match("croix")) ||
+         (buttonB1.className.match("croix") && buttonB2.className.match("croix") && buttonB3.className.match("croix")) ||
+         (buttonC1.className.match("croix") && buttonC2.className.match("croix") && buttonC3.className.match("croix")) ||
+        // CROIX VERTICAL
+         (buttonA1.className.match("croix") && buttonB1.className.match("croix") && buttonC1.className.match("croix")) ||
+         (buttonA2.className.match("croix") && buttonB2.className.match("croix") && buttonC2.className.match("croix")) ||
+         (buttonA3.className.match("croix") && buttonB3.className.match("croix") && buttonC3.className.match("croix")) ||
+        // CROIX DIAGONAL
+         (buttonA1.className.match("croix") && buttonB2.className.match("croix") && buttonC3.className.match("croix")) ||
+         (buttonA3.className.match("croix") && buttonB2.className.match("croix") && buttonC1.className.match("croix"))   ){
+            alert("Les croix Gagnent !");
+            document.location.reload();
+        }
 }
+
