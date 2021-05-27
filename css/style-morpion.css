@@ -22,7 +22,6 @@ h1{
 }
 
 .container-button{
-    background-color: rgb(0, 0, 0);
     height: 500px;
     width: 550px;
     position: relative;
@@ -33,10 +32,19 @@ h1{
 .button{
     height: 166.7px;
     width: 179.9px;
+    margin-top:4px;
 }
 
 .relancer{
     margin-top:30px;
     position: relative;
     width: 100%;
+}
+
+.rond{
+    background-image: url("../assets/img/rond.png");
+}
+
+.croix{
+    background-image: url("../assets/img/croix.png");
 }

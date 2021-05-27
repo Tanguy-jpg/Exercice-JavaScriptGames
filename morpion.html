@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Morpion</title>
     <link rel="stylesheet" href="css/style-morpion.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sigmar+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sigmar+One&display=swap" rel="stylesheet">
+    <script src="js/script-morpion.js" defer></script>
 </head>
 <body>
     <section id="jeu" class="jeu">
         <h1>Jeu du Morpion</h1>
         <div class="container-button">
             <div class="collumn">
-                <button id="button1" class="button"></button>
-                <button id="button2" class="button"></button>
-                <button id="button3" class="button"></button>
+                <button id="button1" class="button" onclick="button1()"></button>
+                <button id="button2" class="button" onclick="button2()"></button>
+                <button id="button3" class="button" onclick="button3()"></button>
             </div>
             <div class="collumn">
-                <button id="button4" class="button"></button>
-                <button id="button5" class="button"></button>
-                <button id="button6" class="button"></button>
+                <button id="button4" class="button" onclick="button4()"></button>
+                <button id="button5" class="button" onclick="button5()"></button>
+                <button id="button6" class="button" onclick="button6()"></button>
             </div>
             <div class="collumn">
-                <button id="button7" class="button"></button>
-                <button id="button8" class="button"></button>
-                <button id="button9" class="button"></button>
+                <button id="button7" class="button" onclick="button7()"></button>
+                <button id="button8" class="button" onclick="button8()"></button>
+                <button id="button9" class="button" onclick="button9()"></button>
             </div>
 
-            <button id="relancer" class="relancer">Relancer une partie</button>
+            <input type="button" class="relancer" onclick='window.location.reload(false)' value="Relancer"/>
         </div>
     </section>
 </body>
