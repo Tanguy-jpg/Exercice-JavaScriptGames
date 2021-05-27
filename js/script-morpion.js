@@ -9,15 +9,8 @@
 
 // Cliquer sur un boutton change la photo ou la classe qui sera attribué la prochaine fois. Si une classe est déjà attibué, ne rien faire
 
-//Un event listener:
+//Un event listener: la classe..?
 
-
-// function swap()
-// {
-// var ancien=document.getElementById("button1").className;
-// if (ancien=='croix') {nouveau='rond';} else {nouveau='croix';}
-// document.getElementById("button1").className=nouveau;
-// }
 
 var croix = true;
 
