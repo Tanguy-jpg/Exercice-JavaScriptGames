@@ -191,6 +191,18 @@ function victoire(){
          (buttonA3.className.match("croix") && buttonB2.className.match("croix") && buttonC1.className.match("croix"))   ){
             alert("Les croix Gagnent !");
             document.location.reload();
+    } else if(
+        (buttonA1.className.match("croix") || buttonA1.className.match("rond")) &&
+        (buttonA2.className.match("croix") || buttonA2.className.match("rond")) &&
+        (buttonA3.className.match("croix") || buttonA3.className.match("rond")) &&
+        (buttonB1.className.match("croix") || buttonB1.className.match("rond")) &&
+        (buttonB3.className.match("croix") || buttonB3.className.match("rond")) &&
+        (buttonB2.className.match("croix") || buttonB2.className.match("rond")) &&
+        (buttonC1.className.match("croix") || buttonC1.className.match("rond")) &&
+        (buttonC2.className.match("croix") || buttonC2.className.match("rond")) &&
+        (buttonC3.className.match("croix") || buttonC3.className.match("rond"))    ){
+            alert("Match nul");
+            document.location.reload();
         }
 }
 
