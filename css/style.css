@@ -1,0 +1,102 @@
+body{
+    font-family: 'Odibee Sans', cursive;
+    background-color: black;
+}
+#core{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+
+#wallpaper-snake{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+#menu{
+    height: 60vh;
+    width: 60vh;
+    position: relative;
+    top:50%;
+    left: 5%;
+    margin-top:-40vh;
+    border-radius: 20px;
+}
+
+h1{
+    margin:0;
+    position:relative;
+    font-size: 82px;
+    color:white;
+    left: 10%;
+    top:20px;
+    transition: 0.9s;
+}
+
+nav{
+    height: 50vh;
+    width: 45vh;
+    position: relative;
+    left:2.5vh;
+    top:50px;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    transition: 0.3s;
+    width: 100%;
+    height: 30%;
+    margin-top: 20px;
+    text-decoration: none;
+    color:black;
+    font-size: 80px;
+    color:white;
+}
+
+#morp:hover{
+        font-size: 79px;
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+#rein:hover{
+    font-size: 79px;
+    background: -webkit-linear-gradient(#eee, rgb(116, 39, 39));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#memo:hover{
+    font-size: 79px;
+    background: -webkit-linear-gradient(#eee, rgb(25, 80, 80));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  h1:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  h1:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
