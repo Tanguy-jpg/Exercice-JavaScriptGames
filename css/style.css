@@ -104,3 +104,13 @@ h1 {
     width: 100%; 
     left: 0; 
   }
+
+
+.qr{
+    position: absolute;
+    width: 13vh;
+    height: 13vh;
+    bottom: 50px;
+    right: 50px;
+    transform: 0.3s;
+}
