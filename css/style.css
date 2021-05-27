@@ -19,7 +19,9 @@ body{
 
 #menu{
     height: 60vh;
+    min-height: 563px;
     width: 60vh;
+    min-width: 563px;
     position: relative;
     top:50%;
     left: 5%;
@@ -39,6 +41,8 @@ h1{
 
 nav{
     height: 50vh;
+    min-height: 420px;
+    min-width: 374px;
     width: 45vh;
     position: relative;
     left:2.5vh;
