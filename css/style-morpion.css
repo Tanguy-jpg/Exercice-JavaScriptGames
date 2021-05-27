@@ -8,6 +8,7 @@ h1{
     /* 254.917 */
     font-size: 35px;
     background-color:rgba(134, 134, 134, 0.5);
+    text-decoration: grey underline;
 }
 .jeu{
     position: relative;
@@ -41,6 +42,8 @@ h1{
     margin-top:30px;
     position: relative;
     width: 100%;
+    background-color:rgba(134, 134, 134, 0.5);
+    color:white;
 }
 
 .rond{
