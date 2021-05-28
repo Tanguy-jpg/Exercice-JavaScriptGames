@@ -1,154 +1,3 @@
-                    //  IDEES AVANT DE COMMENCER 
-// Quand on clique sur un boutton: ça fait une croix dans le boutton.
-// Si il y a déjà une croix ou un rond dans le boutton, ça ne marche pas.
-// Si ça marche, on change l'image de la croix par l'image d'un rond(pour le prochain tour).
-
-// pourquoi ne pas créer une classe background-image ROND et CROIX pour les bouttons ?
-
-// SI LA CLASSE ROND OU CROIX EST ACTIVE ALORS RIEN FAIRE. SI LA Précedente classe attribuée était rond, alors ajouter croix
-
-// Cliquer sur un boutton change la photo ou la classe qui sera attribué la prochaine fois. Si une classe est déjà attibué, ne rien faire
-
-//Un event listener: la classe..?
-
-
-var croix = true;
-
-function button1(){
-    var button1 = document.getElementById("button1");
-
-    if (button1.className.match("croix") || button1.className.match("rond")){
-        alert('case dejà prise')
-    } else if(croix == true) {
-        button1.classList.add("croix");
-        croix = false;
-        victoire();
-    }else if (croix == false){
-        button1.classList.add("rond");
-        croix=true;
-        victoire();
-    }
-}
-function button2(){
-    var button1 = document.getElementById("button2");
-
-    if (button1.className.match("croix") || button1.className.match("rond")){
-        alert('case dejà prise')
-    } else if(croix == true) {
-        button1.classList.add("croix");
-        croix = false;
-        victoire();
-    }else if (croix == false){
-        button1.classList.add("rond");
-        croix=true;
-        victoire();
-    }
-}
-function button3(){
-    var button1 = document.getElementById("button3");
-
-    if (button1.className.match("croix") || button1.className.match("rond")){
-        alert('case dejà prise')
-    } else if(croix == true) {
-        button1.classList.add("croix");
-        croix = false;
-        victoire();
-    }else if (croix == false){
-        button1.classList.add("rond");
-        croix=true;
-        victoire();
-    }
-}
-function button4(){
-    var button1 = document.getElementById("button4");
-
-    if (button1.className.match("croix") || button1.className.match("rond")){
-        alert('case dejà prise')
-    } else if(croix == true) {
-        button1.classList.add("croix");
-        croix = false;
-        victoire();
-    }else if (croix == false){
-        button1.classList.add("rond");
-        croix=true;
-        victoire();
-    }
-}
-function button5(){
-    var button1 = document.getElementById("button5");
-
-    if (button1.className.match("croix") || button1.className.match("rond")){
-        alert('case dejà prise')
-    } else if(croix == true) {
-        button1.classList.add("croix");
-        croix = false;
-        victoire();
-    }else if (croix == false){
-        button1.classList.add("rond");
-        croix=true;
-        victoire();
-    }
-}
-function button6(){
-    var button1 = document.getElementById("button6");
-
-    if (button1.className.match("croix") || button1.className.match("rond")){
-        alert('case dejà prise')
-    } else if(croix == true) {
-        button1.classList.add("croix");
-        croix = false;
-        victoire();
-    }else if (croix == false){
-        button1.classList.add("rond");
-        croix=true;
-        victoire();
-    }
-}
-function button7(){
-    var button1 = document.getElementById("button7");
-
-    if (button1.className.match("croix") || button1.className.match("rond")){
-        alert('case dejà prise')
-    } else if(croix == true) {
-        button1.classList.add("croix");
-        croix = false;
-        victoire();
-    }else if (croix == false){
-        button1.classList.add("rond");
-        croix=true;
-        victoire();
-    }
-}
-function button8(){
-    var button1 = document.getElementById("button8");
-
-    if (button1.className.match("croix") || button1.className.match("rond")){
-        alert('case dejà prise')
-    } else if(croix == true) {
-        button1.classList.add("croix");
-        croix = false;
-        victoire();
-    }else if (croix == false){
-        button1.classList.add("rond");
-        croix=true;
-        victoire();
-    }
-}
-function button9(){
-    var button1 = document.getElementById("button9");
-
-    if (button1.className.match("croix") || button1.className.match("rond")){
-        alert('case dejà prise')
-    } else if(croix == true) {
-        button1.classList.add("croix");
-        croix = false;
-        victoire();
-    }else if (croix == false){
-        button1.classList.add("rond");
-        croix=true;
-        victoire();
-    }
-}
 
 const buttonA1 = document.getElementById("button1");
 const buttonA2 = document.getElementById("button2");
@@ -206,3 +55,24 @@ function victoire(){
         }
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////FONCTION DU CLIC SUR LES BOUTTONS////////////////////////////////////////////////////////////////////////////////////////////
+
+
+var tour = true;                                                                //Je donne une valeur initiale à ma variable tour
+
+function button(button){                                                        //Je crée une fonction qui:
+    var boutton = document.getElementById("button"+button);                     //(je donne une valeur à ma variable qui est l'id du boutton sur lequel on clique)
+
+    if (boutton.className.match("croix") || boutton.className.match("rond")){   //1)Crée une ALerte
+        alert('case dejà prise')                                                //   si le la case en question a déjà une des classes "croix" ou "rond"
+    } else if(tour == true) {                                                   //2)Ajoute la classe "croix" au boutton si
+        boutton.classList.add("croix");                                         //   la variable 'tour' est en "true" 
+        croix = false;                                                          //   puis transforme la variable 'tour' en false
+        victoire();                                                             //   et pour finir vérifie que les conditions de victoire ne sont pas remplies.
+    }else if (tour == false){                                                   //3)Ajoute la classe "croix" au boutton si
+        boutton.classList.add("rond");                                          //   la variable 'tour' est en "true" 
+        croix=true;                                                             //   puis transforme la variable 'tour' en false
+        victoire();                                                             //   et pour finir vérifie que les conditions de victoire ne sont pas remplies.
+    }
+}
