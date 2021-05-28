@@ -68,7 +68,7 @@ function button(button){                                                        
     var boutton = document.getElementById("button"+button);                     // (je donne une valeur à ma variable qui est l'id du boutton sur lequel on clique)       //
                                                                                 //                                                                                        //
     if (boutton.className.match("croix") || boutton.className.match("rond")){   // 1)Crée une ALerte                                                                      //
-        alert('case dejà prise')                                                //   si le la case en question a déjà une des classes "croix" ou "rond"                   //
+        alert('case dejà prise')                                                //   si le boutton en question a déjà une des classes "croix" ou "rond"                   //
     } else if(tour == true) {                                                   // 2)Ajoute la classe "croix" au boutton si                                               //
         boutton.classList.add("croix");                                         //    la variable 'tour' est en "true"                                                    //
         tour = false;                                                           //    puis transforme la variable 'tour' en false                                         //
