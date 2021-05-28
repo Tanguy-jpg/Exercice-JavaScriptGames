@@ -68,11 +68,11 @@ function button(button){                                                        
         alert('case dejà prise')                                                //   si le la case en question a déjà une des classes "croix" ou "rond"
     } else if(tour == true) {                                                   //2)Ajoute la classe "croix" au boutton si
         boutton.classList.add("croix");                                         //   la variable 'tour' est en "true" 
-        tour = false;                                                          //   puis transforme la variable 'tour' en false
+        tour = false;                                                           //   puis transforme la variable 'tour' en false
         victoire();                                                             //   et pour finir vérifie que les conditions de victoire ne sont pas remplies.
     }else if (tour == false){                                                   //3)Ajoute la classe "croix" au boutton si
         boutton.classList.add("rond");                                          //   la variable 'tour' est en "true" 
-        tour=true;                                                             //   puis transforme la variable 'tour' en false
+        tour=true;                                                              //   puis transforme la variable 'tour' en false
         victoire();                                                             //   et pour finir vérifie que les conditions de victoire ne sont pas remplies.
     }
 }
