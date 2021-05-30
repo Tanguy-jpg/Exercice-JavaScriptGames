@@ -28,7 +28,6 @@ while (i--) {
 }
 for (var i=0; i<16; i++){
     var carte = ['luke', 'abdiel', 'souhir', 'sam', 'kevin', 'jonathan', 'emma', 'dimy', 'luke', 'abdiel', 'souhir', 'sam', 'kevin', 'jonathan', 'emma', 'dimy']
-    console.log(carte[i] + " " + ranPlace[i]);
     ranPlace[i].classList.add(carte[i]); 
 }
 }
@@ -42,6 +41,8 @@ function clik(number){
         carte.classList.remove('hide');
         nbrclick++
         console.log(nbrclick)
+    } else{
+        carte.classList.add('hide')
     }
 
     // if (nbrclick >= 2){
