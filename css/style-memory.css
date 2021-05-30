@@ -1,20 +1,66 @@
-.red{
-    background-color:red;
-    
+body{
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
 }
-.blue{
-    background-color:blue;
+button{
+    width: 20vh;
+    height: 20vh;
+}
+.core{
+    background-color: black;
+    position: relative;
+    left: 50%;
+    top:52vh;
+    border-radius: 10px;
+    height: 80vh;
+    width: 80vh;
+    margin-left: -40vh;
+    margin-top: -40vh;
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-columns: auto auto auto auto;
 }
 
-.green{
-    background-color:green;
+.cartes{
+    background-color: rgba(134, 134, 134, 0.5);
+    transition: 0.3s;
+}
+.cartes:hover{
+    background-color: rgba(51, 51, 51, 0.5);
+    opacity: 50%;
 }
 
-div{
-    height: 100px;
-    width: 100px;
-    display: inline-block;
+/* CLASSES CARTES */
+
+.luke{
+    background: url('../assets/img/luke.jpg') no-repeat;     
+    background-size: 20vh;
 }
-
-
-
+.sam{
+    background: url('../assets/img/sam.jpg') no-repeat;     
+    background-size: 20vh;
+}
+.souhir{
+    background: url('../assets/img/souhir.jpg') no-repeat;     
+    background-size: 20vh;
+}
+.jonathan{
+    background: url('../assets/img/jonathan.jpg') no-repeat;     
+    background-size: 20vh;
+}
+.dimy{
+    background: url('../assets/img/dimi.jpg') no-repeat;     
+    background-size: 20vh;
+}
+.abdiel{
+    background: url('../assets/img/abdiel.jpg') no-repeat;     
+    background-size: 20vh;
+}
+.emma{
+    background: url('../assets/img/emma.jpg') no-repeat;     
+    background-size: 20vh;
+}
+.kevin{
+    background: url('../assets/img/kevin.jpg') no-repeat;     
+    background-size: 20vh;
+}
