@@ -28,7 +28,7 @@ function melangeCarte(){
     }
     for (var i=0; i<16; i++){
         var carte = ['luke', 'abdiel', 'souhir', 'sam', 'kevin', 'jonathan', 'emma', 'dimy', 'luke', 'abdiel', 'souhir', 'sam', 'kevin', 'jonathan', 'emma', 'dimy']
-        ranPlace[i].classList.add(carte[i]); 
+        ranPlace[i].classList.add(carte[i], "hide"); 
 }
 }
 ////////////////////////////////////////////////////////////////////////////
@@ -50,11 +50,35 @@ function clik(number){
     }
     if (carteselec.className.match('luke')){
         luke++;
-        console.log(luke);
+        console.log("luke: " +luke);
     }
     if (carteselec.className.match('abdiel')){
         abdiel++;
-        console.log(abdiel);
+        console.log("abdiel: "+ abdiel);
+    }
+    if (carteselec.className.match('souhir')){
+        souhir++;
+        console.log("souhir: "+souhir);
+    }
+    if (carteselec.className.match('sam')){
+        sam++;
+        console.log("sam: "+sam);
+    }
+    if (carteselec.className.match('kevin')){
+        kevin++;
+        console.log('kevin: '+kevin);
+    }
+    if (carteselec.className.match('jonathan')){
+        jonathan++;
+        console.log("jonathan: "+jonathan);
+    }
+    if (carteselec.className.match('emma')){
+        emma++;
+        console.log("emma: "+emma);
+    }
+    if (carteselec.className.match('dimy')){
+        dimy++;
+        console.log("dimy: "+dimy);
     }
 
     var delay = 2000; 
@@ -67,14 +91,100 @@ function clik(number){
 function condition(){
     var howmany = 0;
 
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('hide')){
+    for (var p=0; p<ranPlace.length; p++){
+        if (ranPlace[p].className.match('hide')){
             howmany++;}}
+
         if (luke >=2){
-            console.log('luketrouvé');
+            console.log('luke trouvé');
+            for (var i=0; i<ranPlace.length; i++)
+            if (ranPlace[i].className.match('hide')){
+                console.log(i+"ok");
+            }else {
+                    ranPlace.splice(i, 1);
+            }
+            luke=0;
+            }
+
+        else if (abdiel >=2){
+                console.log('abdiel trouvé');
+                for (var i=0; i<ranPlace.length; i++)
+                if (ranPlace[i].className.match('hide')){
+                    console.log(i+"ok");
+                }else {
+                        ranPlace.splice(i, 1);
+                }
+                abdiel=0;
+                } 
+        
+        else if (souhir >=2){
+            console.log('souhir trouvé');
+            for (var i=0; i<ranPlace.length; i++)
+            if (ranPlace[i].className.match('hide')){
+                console.log(i+"ok");
+            }else {
+                    ranPlace.splice(i, 1);
+            }
+            souhir=0;
+            } 
+
+        else if (sam >=2){
+            console.log('sam trouvé');
+            for (var i=0; i<ranPlace.length; i++)
+            if (ranPlace[i].className.match('hide')){
+                console.log(i+"ok");
+            }else {
+                    ranPlace.splice(i, 1);
+            }
+            sam=0;
+            } 
+
+        else if (kevin >=2){
+            console.log('kevin trouvé');
+            for (var i=0; i<ranPlace.length; i++)
+            if (ranPlace[i].className.match('hide')){
+                console.log(i+"ok");
+            }else {
+                    ranPlace.splice(i, 1);
+            }
+            kevin=0;
+            } 
+
+        else if (emma >=2){
+            console.log('emma trouvé');
+            for (var i=0; i<ranPlace.length; i++)
+            if (ranPlace[i].className.match('hide')){
+                console.log(i+"ok");
+            }else {
+                    ranPlace.splice(i, 1);
+            }
+            emma=0;
+            } 
+        else if (jonathan >=2){
+            console.log('jonathan trouvé');
+            for (var i=0; i<ranPlace.length; i++)
+            if (ranPlace[i].className.match('hide')){
+                console.log(i+"ok");
+            }else {
+                    ranPlace.splice(i, 1);
+            }
+            jonathan=0;
+            } 
             
-        }else if (howmany <= 14){
-            for (var i=0; i<16; i++){
+        else if (dimy >=2){
+            console.log('dimy trouvé');
+            for (var i=0; i<ranPlace.length; i++)
+            if (ranPlace[i].className.match('hide')){
+                console.log(i+"ok");
+            }else {
+                    ranPlace.splice(i, 1);
+            }
+            dimy=0;
+            } 
+
+
+            else if (howmany <= parseInt(ranPlace.length)-2){
+            for (var i=0; i<ranPlace.length; i++){
                 ranPlace[i].classList.add('hide');}
 
                 luke = 0;
@@ -88,6 +198,13 @@ function condition(){
             }
 }
 
+    
+    function arrayRemove(arr, value) { 
+    
+        return arr.filter(function(ele){ 
+            return ele != value; 
+        });
+    }
 // function pastrois(){
 //     var howmany = 0;
 
