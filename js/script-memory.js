@@ -50,51 +50,51 @@ function clik(number){
 
 function condition(){
     var howmany = 0;
-    var luke = 0
-    var abdiel = 0
-    var souhir = 0
-    var sam = 0
-    var kevin = 0
-    var jonathan = 0
-    var emma = 0
-    var dimy = 0
+    // var luke = 0
+    // var abdiel = 0
+    // var souhir = 0
+    // var sam = 0
+    // var kevin = 0
+    // var jonathan = 0
+    // var emma = 0
+    // var dimy = 0
 
     for (var i=0; i<16; i++){
         if (ranPlace[i].className.match('hide')){
             howmany++;}}
-////////////////////////////////////////////////////////////////////////////////
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('luke')){
-            luke++;}}
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('abdiel')){
-            abdiel++;}}
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('souhir')){
-            souhir++;}}
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('sam')){
-            sam++;}}  
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('kevin')){
-            kevin++;}}
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('jonathan')){
-            jonathan++;}}
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('emma')){
-            emma++;}}
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('kevin')){
-            kevin++;}}
-    for (var i=0; i<16; i++){
-        if (ranPlace[i].className.match('dimy')){
-            dimy++;}}
-//////////////////////////////////////////////////////////////////////////////
-    if (luke >=2){
-        console.log('Luke trouvé')
-    }
-    else if (howmany <= 14){
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // for (var i=0; i<16; i++){
+    //     if (ranPlace[i].className.match('luke')){
+    //         luke++;}}
+    // for (var i=0; i<16; i++){
+    //     if (ranPlace[i].className.match('abdiel')){
+    //         abdiel++;}}
+    // for (var i=0; i<16; i++){
+    //     if (ranPlace[i].className.match('souhir')){
+    //         souhir++;}}
+    // for (var i=0; i<16; i++){
+    //     if (ranPlace[i].className.match('sam')){
+    //         sam++;}}  
+    // for (var i=0; i<16; i++){
+    //     if (ranPlace[i].className.match('kevin')){
+    //         kevin++;}}
+    // for (var i=0; i<16; i++){
+    //     if (ranPlace[i].className.match('jonathan')){
+    //         jonathan++;}}
+    // for (var i=0; i<16; i++){
+    //     if (ranPlace[i].className.match('emma')){
+    //         emma++;}}
+    // for (var i=0; i<16; i++){
+    //     if (ranPlace[i].className.match('kevin')){
+    //         kevin++;}}
+    // for (var i=0; i<16; i++){
+    //     if (ranPlace[i].className.match('dimy')){
+    //         dimy++;}}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // if (luke >=2){
+    //     console.log('Luke trouvé')
+    // }
+        if (howmany <= 14){
         for (var i=0; i<16; i++){
             ranPlace[i].classList.add('hide');}
         }
