@@ -33,6 +33,7 @@ button{
 /* CLASSES CARTES */
 
 .luke{
+    background-color: gray;
     background: url('../assets/img/luke.jpg') no-repeat;     
     background-size: 20vh;
 }

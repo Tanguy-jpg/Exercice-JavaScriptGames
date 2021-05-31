@@ -31,22 +31,60 @@ for (var i=0; i<16; i++){
     ranPlace[i].classList.add(carte[i]); 
 }
 }
-
-var nbrclick = 0;
+////////////////////////////////////////////////////////////////////////////
 
 function clik(number){
-    var carte = document.getElementById("c"+number);
+    var carteselec = document.getElementById("c"+number);
 
-    if (carte.className.match('hide')){
-        carte.classList.remove('hide');
-        nbrclick++
-        console.log(nbrclick)
-    } else{
-        carte.classList.add('hide')
+    if (carteselec.className.match('hide')){
+        console.log(carteselec.classList)
+        carteselec.classList.remove('hide');
+        
     }
-
-    // if (nbrclick >= 2){
-    //     carte.classList.add('hide');
-    //     nbrclick=0;
-    // }
+    condition();
 }
+
+function condition(){
+    var howmany = 0;
+
+    for (var i=0; i<16; i++){
+        if (ranPlace[i].className.match('hide')){
+            howmany++;
+        }
+    }
+    if (howmany <= 14){
+        sleep(2000);
+        for (var i=0; i<16; i++){
+            ranPlace[i].classList.add('hide');
+            }
+        }
+}
+
+function sleep(miliseconds) {
+    var currentTime = new Date().getTime();
+ 
+    while (currentTime + miliseconds >= new Date().getTime()) {
+    }
+ }
+
+
+// function clik(number){
+//     var carteselec = document.getElementById("c"+number);
+    
+//     function tourcomplet(){
+//         if(nbrclick >=2){     
+//             carteselec.classList.add('hide');
+//             console.log(ranPlace)
+//             nbrclick = 0;
+//         }
+//     }
+
+    // if (carteselec.className.match('hide')){
+    //     carteselec.classList.remove('hide');
+//         nbrclick++
+//         console.log(nbrclick)
+//         tourcomplet();
+//     } else{
+//         carteselec.classList.add('hide')
+//     }
+// }
