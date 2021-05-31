@@ -29,7 +29,15 @@ button{
     background-color: rgba(51, 51, 51, 0.5);
     opacity: 50%;
 }
-
+#display{
+    color:rgb(141, 141, 141);
+    font-size:6vh;
+    position: absolute;
+    top:1vh;
+    left:1vh;
+    opacity: 50%;
+    transition: 2s;
+}
 /* CLASSES CARTES */
 
 .luke{
