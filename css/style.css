@@ -133,5 +133,6 @@ h1 {
 @media (max-width:650px){
     h1{
         font-size: 6vh;
+        transform: translate(-10%, 0%)
     }
 }
