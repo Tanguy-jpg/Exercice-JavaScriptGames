@@ -107,7 +107,7 @@ h1:hover:after {
     }
 }
 
-@media (max-width:500px){
+@media (max-width:550px){
     .jeu{
         top:0;
         left:0;
@@ -122,4 +122,18 @@ h1:hover:after {
         transform: translate(-30%, 0%);
     }
 
+    .button{
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .relancer{
+        width: 46.5vh;
+    }
+    .croix{
+        background-size: 15vh;
+    }
+    .rond{
+        background-size: 15vh;
+    }
 }
