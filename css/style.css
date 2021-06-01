@@ -11,17 +11,9 @@ body{
     overflow: hidden;
 }
 
-#wallpaper-snake{
-    width: 100%;
-    position: absolute;
-    z-index: -2;
-}
-
 #menu{
     height: 60vh;
-    min-height: 563px;
     width: 60vh;
-    min-width: 563px;
     position: relative;
     top:50%;
     left: 5%;
@@ -32,7 +24,7 @@ body{
 h1{
     margin:0;
     position:relative;
-    font-size: 82px;
+    font-size: 8vh;
     color:white;
     left: 10%;
     top:20px;
@@ -55,29 +47,29 @@ a{
     transition: 0.3s;
     width: 100%;
     height: 30%;
-    margin-top: 20px;
+    margin-top: 0vh;
     text-decoration: none;
     color:black;
-    font-size: 80px;
+    font-size: 7vh;
     color:white;
 }
 
 #morp:hover{
-        font-size: 79px;
+        font-size: 6.8vh;
         background: -webkit-linear-gradient(#eee, #333);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
 
 #rein:hover{
-    font-size: 79px;
+    font-size: 6.8vh;
     background: -webkit-linear-gradient(#eee, rgb(116, 39, 39));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #memo:hover{
-    font-size: 79px;
+    font-size: 6.8vh;
     background: -webkit-linear-gradient(#eee, rgb(25, 80, 80));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -119,4 +111,27 @@ h1 {
 
 .qr:hover{
     opacity: 100%;
+}
+
+#video-bg{
+    position: fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    #video-bg{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    #video-bg{
+        width: auto;
+        height: 100%
+    }
+}
+
+@media (max-width:650px){
+    h1{
+        font-size: 6vh;
+    }
 }
