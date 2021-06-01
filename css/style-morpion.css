@@ -111,7 +111,7 @@ h1:hover:after {
     .jeu{
         top:0;
         left:0;
-        transform:none;
+        transform:translate(-4%, 0%);
     }
     h1{
         font-size:5vh;
