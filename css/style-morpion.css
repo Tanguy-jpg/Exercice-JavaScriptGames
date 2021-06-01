@@ -58,10 +58,16 @@ h1{
 
 .rond{
     background-image: url("../assets/img/rond.png");
+    height: 20vh;
+    width: 20vh;
+    background-position: center;
 }
 
 .croix{
     background-image: url("../assets/img/croix.png");
+    background-position: center;
+    height: 20vh;
+    width: 20vh;
 }
 
 h1:after {    
