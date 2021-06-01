@@ -77,7 +77,7 @@ button{
 }
 
 .hide{
-    background-size: 0 0;
+    background-position: 999px;
 }
 
 @media (max-width:830px){
@@ -91,7 +91,11 @@ button{
         width: 74.5vh;
         transition: 0.3s;
     }
+    .abdiel, .emma, .kevin, .sam, .dimy, .jonathan, .souhir, .luke{
+        background-size: 17vh;
+    }
 }
+
 @media (max-width:680px){
     button{
         width: 12vh;
@@ -103,16 +107,24 @@ button{
         width: 52vh;
         transition: 0.3s;
     }
+    .abdiel, .emma, .kevin, .sam, .dimy, .jonathan, .souhir, .luke{
+        background-size: 12vh;
+    }
 }
+
 @media (max-width:490px){
     button{
         width: 10vh;
         height: 10vh;
         transition: 0.3s;
+        
     }
     .core{
         height: 43.5vh;
         width: 43.5vh;
         transition: 0.3s;
+    }
+    .abdiel, .emma, .kevin, .sam, .dimy, .jonathan, .souhir, .luke{
+        background-size: 10vh;
     }
 }

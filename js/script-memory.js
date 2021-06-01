@@ -28,7 +28,7 @@ function melangeCarte(){
     }
     for (var i=0; i<16; i++){
         var carte = ['luke', 'abdiel', 'souhir', 'sam', 'kevin', 'jonathan', 'emma', 'dimy', 'luke', 'abdiel', 'souhir', 'sam', 'kevin', 'jonathan', 'emma', 'dimy']
-        ranPlace[i].classList.add(carte[i], "hide"); 
+        ranPlace[i].classList.add(carte[i]); 
 }
 }
 ////////////////////////////////////////////////////////////////////////////
