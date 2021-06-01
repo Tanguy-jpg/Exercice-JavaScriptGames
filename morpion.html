@@ -12,11 +12,10 @@
     <link rel="icon" href="assets/img/favicon.ico" />
 </head>
 <body>
-    <div class="container-smoke">
-        <video id="wallpaper-smoke" autoplay loop muted>
-            <source src="assets/vid/smoke.mp4" type="video/mp4">
-        </video>  
-    </div>
+    <video id="bg-smoke" poster="assets/img/poster-smoke.PNG" autoplay loop muted>
+        <source src="assets/vid/bg-smoke.mp4" type="video/mp4">
+    </video>  
+    
     <section id="jeu" class="jeu">
         <h1>Jeu du Morpion</h1>
         <div class="container-button">
@@ -35,7 +34,6 @@
                 <button id="button8" class="button" onclick="button(8)"></button>
                 <button id="button9" class="button" onclick="button(9)"></button>
             </div>
-
             <input type="button" class="relancer" onclick='window.location.reload(false)' value="Relancer"/>
         </div>
     </section>
