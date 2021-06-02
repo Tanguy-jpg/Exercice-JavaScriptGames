@@ -3,6 +3,12 @@ body{
     background-color: black;
 }
 
+#bg-smoke{
+    position: fixed;
+    z-index: -1;
+    top:0px;
+}
+
 nav{
     position: fixed;
     height: 3vh;
@@ -15,18 +21,20 @@ nav{
     color:rgb(156, 156, 156);
     z-index: 200;
 }
-
+/* --- au dessus du jeu --- */
 h1{
     position: absolute;
-    /* 254.917 */
     font-size: 8vh;
     color:white;
     text-decoration: none;
     transition:0.3s;
+    cursor:default;
 }
+
+/* --- Jeu --- */
+/*container+buttons*/
 .jeu{
     position: absolute;
-    border-radius: 10px;
     height: 80vh;
     width: 80vh;
     top: 50%;
@@ -49,26 +57,7 @@ h1{
     background-color: rgba(134, 134, 134, 0.5);
     transition: 0.3s;
 }
-
-.button:hover{
-    background-color: rgba(51, 51, 51, 0.5);
-}
-
-.relancer{
-    margin-top:4vh;
-    position: relative;
-    width: 61.5vh;
-    font-size: 2vh;
-    background-color:rgba(134, 134, 134, 0.5);
-    color:black;
-    transition: 0.3s;
-}
-
-.relancer:hover{
-    background-color:rgba(80, 79, 79, 0.5);
-    color:rgb(172, 170, 170);
-}
-
+/*classes croix et rond*/
 .rond{
     background-image: url("../assets/img/rond.png");
     height: 20vh;
@@ -83,6 +72,19 @@ h1{
     width: 20vh;
 }
 
+/* --- en dessous du jeu --- */
+.relancer{
+    position: relative;
+    top:1.5vh;
+    left:22vh;
+    width: 61.5vh;
+    font-size: 5vh;
+    color:rgb(202, 202, 202);
+    transition: 0.3s;
+}
+
+/* --- animations --- */
+/*titre jeu*/
 h1:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -101,11 +103,18 @@ h1:hover:after {
     left: 0; 
 }
 
-#bg-smoke{
-      position: fixed;
-      z-index: -1;
-      top:0px;
-  }
+/*jeu*/
+.button:hover{
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+/*dessous jeu*/
+.relancer:hover{
+    color:rgb(102, 102, 102);
+    cursor: pointer;
+}
+
+/* --- responsive --- */
 
 @media (min-aspect-ratio:16/9){
     #bg-smoke{
@@ -120,6 +129,7 @@ h1:hover:after {
     }
 }
 
+/* 
 @media (max-width:550px){
     .jeu{
         top:0;
@@ -149,4 +159,4 @@ h1:hover:after {
     .rond{
         background-size: 15vh;
     }
-}
+} */
