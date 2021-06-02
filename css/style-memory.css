@@ -111,11 +111,13 @@ body{
         background-size: 12vh;
     }
 }
+
 @media (max-width:561px){
     #display{
         font-size: 4vh;
     }
 }
+
 @media (max-width:490px){
     button{
         width: 10vh;
