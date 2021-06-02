@@ -3,6 +3,19 @@ body{
     background-color: black;
 }
 
+nav{
+    position: fixed;
+    height: 3vh;
+    width: 30%;
+    top:1vh;
+    right: 0;
+    text-align: end;
+    margin-right: 1vh;
+    font-size: 3vh;
+    color:rgb(156, 156, 156);
+    z-index: 200;
+}
+
 h1{
     position: absolute;
     /* 254.917 */
