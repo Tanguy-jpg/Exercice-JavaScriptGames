@@ -3,6 +3,18 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+nav{
+    position: fixed;
+    height: 3vh;
+    width: 100%;
+    top:1vh;
+    right: 0;
+    text-align: end;
+    margin-right: 1vh;
+    font-size: 3vh;
+    color:rgb(156, 156, 156)
+}
+
 .core{
     position: relative;
     top: 10vh;
