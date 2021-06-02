@@ -3,16 +3,28 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/* --- NavBar --- */
 nav{
     position: fixed;
-    height: 3vh;
-    width: 100%;
-    top:1vh;
-    right: 0;
+    height: 3.5vh;
+    width: auto;
+    top:2vh;
+    right: 2vh;
     text-align: end;
-    margin-right: 1vh;
+    z-index: 2;
+}
+nav>a{
+    color:rgb(156, 156, 156);
     font-size: 3vh;
-    color:rgb(156, 156, 156)
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav>a:hover{
+    color:rgb(94, 92, 92);
+    font-size: 3.5vh;
+    transition: 0.3s;
 }
 
 .core{

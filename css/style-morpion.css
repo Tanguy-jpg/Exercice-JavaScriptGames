@@ -8,79 +8,76 @@ body{
     z-index: -1;
     top:0px;
 }
-
+/* --- NavBar --- */
 nav{
     position: fixed;
-    height: 3vh;
-    width: 30%;
-    top:1vh;
-    right: 0;
+    height: 3.5vh;
+    width: auto;
+    top:2vh;
+    right: 2vh;
     text-align: end;
-    margin-right: 1vh;
-    font-size: 3vh;
+    z-index: 2;
+}
+nav>a{
     color:rgb(156, 156, 156);
-    z-index: 200;
+    font-size: 3vh;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav>a:hover{
+    color:rgb(94, 92, 92);
+    font-size: 3.5vh;
+    transition: 0.3s;
 }
 /* --- au dessus du jeu --- */
 h1{
-    position: absolute;
-    font-size: 8vh;
+    margin:0%;
+    font-size: 6vh;
     color:white;
     text-decoration: none;
     transition:0.3s;
     cursor:default;
+    width: fit-content;
+    position: relative;
+    left:50%;
+    top:10vh;
+    transform: translate(-50%, 0);
 }
 
 /* --- Jeu --- */
 /*container+buttons*/
-.jeu{
-    position: absolute;
-    height: 80vh;
-    width: 80vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .container-button{
+    position:relative;
+    top:50vh;
+    left: 50%;
     height: 70vh;
     width: 70vh;
-    position: relative;
-    top:15vh;
-    left: 8vh;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2vh;
+    transition: 0.3s;
 }
 
 .button{
-    height: 20vh;
-    width: 20vh;
-    margin-top:4px;
     background-color: rgba(134, 134, 134, 0.5);
     transition: 0.3s;
 }
+
 /*classes croix et rond*/
 .rond{
     background-image: url("../assets/img/rond.png");
-    height: 20vh;
-    width: 20vh;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .croix{
     background-image: url("../assets/img/croix.png");
     background-position: center;
-    height: 20vh;
-    width: 20vh;
-}
-
-/* --- en dessous du jeu --- */
-.relancer{
-    position: relative;
-    top:1.5vh;
-    left:22vh;
-    width: 61.5vh;
-    font-size: 5vh;
-    color:rgb(202, 202, 202);
-    transition: 0.3s;
+    background-repeat: no-repeat;
 }
 
 /* --- animations --- */
@@ -93,7 +90,7 @@ h1:after {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: rgb(104, 12, 12);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -106,12 +103,6 @@ h1:hover:after {
 /*jeu*/
 .button:hover{
     background-color: rgba(51, 51, 51, 0.5);
-}
-
-/*dessous jeu*/
-.relancer:hover{
-    color:rgb(102, 102, 102);
-    cursor: pointer;
 }
 
 /* --- responsive --- */
@@ -129,34 +120,44 @@ h1:hover:after {
     }
 }
 
-/* 
-@media (max-width:550px){
-    .jeu{
-        top:0;
-        left:0;
-        transform:translate(-4%, 0%);
-    }
-    h1{
-        font-size:5vh;
-        transition: 0.3s;
-        transform: translate(10%, 100%);
-    }
-    #bg-smoke{
-        transform: translate(-30%, 0%);
-    }
 
-    .button{
-        width: 15vh;
-        height: 15vh;
+@media (max-width: 575.98px) {
+    .container-button{
+        grid-template-columns: 15.5vh 15.5vh 15.5vh;
+        grid-template-rows: 15.5vh 15.5vh 15.5vh;
+        width: 70%;
+        left: 50vh;
+        transform: translate(-50vh, -50%);
     }
+}
+@media (max-width: 414.98px) {
+    .container-button{
+        grid-template-columns: 16.8vh 16.8vh 16.8vh;
+        grid-template-rows: 16.8vh 16.8vh 16.8vh;
+        width: 70%;
+        left: 50vh;
+        transform: translate(-50vh, -50%);
+    }
+}
+@media (max-width: 375.98px) {
+    .container-button{
+        grid-template-columns: 13.5vh 13.5vh 13.5vh;
+        grid-template-rows: 13.5vh 13.5vh 13.5vh;
+        width: 70%;
+        left: 50vh;
+        transform: translate(-50vh, -50%);
+    }
+}
 
-    .relancer{
-        width: 46.5vh;
-    }
-    .croix{
-        background-size: 15vh;
-    }
-    .rond{
-        background-size: 15vh;
-    }
-} */
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { ... }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { ... }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { ... }
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { ... }
