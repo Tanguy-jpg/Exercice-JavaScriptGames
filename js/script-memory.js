@@ -3,7 +3,7 @@ const A2 = document.getElementById("c2");
 const A3 = document.getElementById("c3");
 const A4 = document.getElementById("c4");
 const B1 = document.getElementById("c5");
-const B2 = document.getElementById("c6");
+const B2 = document.getElementById("c6");         // cases
 const B3 = document.getElementById("c7");
 const B4 = document.getElementById("c8");
 const C1 = document.getElementById("c9");
@@ -12,9 +12,10 @@ const C3 = document.getElementById("c11");
 const C4 = document.getElementById("c12");
 const D1 = document.getElementById("c13");
 const D2 = document.getElementById("c14");
-const D3 = document.getElementById("c15");
+const D3 = document.getElementById("c15");  
 const D4 = document.getElementById("c16");
 
+/////////////////     Mélanger les cartes aléatoirement en début de partie     /////////////////
 function melangeCarte(){
     var place = [A1,A2,A3,A4,B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4];
         ranPlace = [];
@@ -31,7 +32,7 @@ function melangeCarte(){
         ranPlace[i].classList.add(carte[i]); 
 }
 }
-////////////////////////////////////////////////////////////////////////////
+////////////////    Clic sur une case    /////////////////////////////
 var nombreEssais = 0;
 
 var luke = 0;
@@ -84,7 +85,7 @@ function clik(number){
             condition()
         }, delay);
 }
-
+/////////////////////  conditions de victoires /////////////////
 function condition(){
     var howmany = 0;
 
@@ -219,7 +220,9 @@ function condition(){
             }
 }
 
+////////////////// afficher des elements sur la page //////////////
 var displayDiv = document.getElementById("display")
+
 function display(text){
     displayDiv.innerHTML= text;
 }
