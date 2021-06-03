@@ -45,6 +45,7 @@ h1{
     transition: 0.9s;
     text-transform: uppercase;
     text-decoration: none;
+    cursor:default;
 }
 
 a{

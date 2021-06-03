@@ -54,6 +54,19 @@ h1{
 }
 
 /* --- Jeu --- */
+/*classes croix et rond*/
+.rond{
+    background-image: url("../assets/img/rond.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.croix{
+    background: url('../assets/img/croix.png');     
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*container+buttons*/
 .container-button{
     height: 70vh;
@@ -68,19 +81,6 @@ h1{
 .button{
     background-color: rgba(134, 134, 134, 0.5);
     transition: 0.3s;
-}
-
-/*classes croix et rond*/
-.rond{
-    background-image: url("../assets/img/rond.png");
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.croix{
-    background-image: url("../assets/img/croix.png");
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 /* --- animations --- */
@@ -129,6 +129,12 @@ h1:hover:after {
         width:49vh;
         height: 49vh;
     }
+    .rond{
+        background-size: 15vh 15vh;
+    }
+    .croix{
+        background-size: 15vh 15vh;
+    }
 }
 
 @media (max-width: 375px) and (max-height:812px){
@@ -142,5 +148,11 @@ h1:hover:after {
     .container-button{
         width:40vh;
         height: 40vh;
+    }
+    .rond{
+        background-size: 11vh 11vh;
+    }
+    .croix{
+        background-size: 11vh 11vh;
     }
 }
