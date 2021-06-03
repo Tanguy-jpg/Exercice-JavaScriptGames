@@ -126,7 +126,21 @@ h1:hover:after {
 /*page*/
 @media (max-width: 576px){
     .container-button{
-        width:50vh;
-        height: 50vh;
+        width:49vh;
+        height: 49vh;
+    }
+}
+
+@media (max-width: 375px) and (max-height:812px){
+    .container-button{
+        width:45vh;
+        height: 45vh;
+    }
+}
+
+@media (max-width: 280px){
+    .container-button{
+        width:40vh;
+        height: 40vh;
     }
 }
