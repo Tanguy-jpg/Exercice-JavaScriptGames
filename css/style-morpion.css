@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: 0.3s;
 }
 
 #bg-smoke{
@@ -124,7 +125,8 @@ h1:hover:after {
 
 /*page*/
 @media (max-width: 576px){
-    body{
-        width:100vh;
+    .container-button{
+        width:50vh;
+        height: 50vh;
     }
 }
