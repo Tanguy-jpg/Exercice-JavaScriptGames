@@ -26,7 +26,7 @@ nav>a:hover{
     font-size: 3.5vh;
     transition: 0.3s;
 }
-
+/* --- jeux --- */
 .core{
     position: relative;
     top: 10vh;
@@ -41,10 +41,10 @@ nav>a:hover{
 
 #display{
     color:rgb(141, 141, 141);
-    font-size:6vh;
-    position: absolute;
-    top:1vh;
-    left:1vh;
+    font-size:3vh;
+    position: fixed;
+    top:2.7vh;
+    left: 2vh;
     opacity: 50%;
     transition: 1s;
 }
@@ -138,7 +138,7 @@ nav>a:hover{
 
 @media (max-width:561px){
     #display{
-        font-size: 4vh;
+        font-size: 3vh;
     }
 }
 
@@ -156,5 +156,28 @@ nav>a:hover{
     }
     .abdiel, .emma, .kevin, .sam, .dimy, .jonathan, .souhir, .luke{
         background-size: 10vh;
+    }
+    #display{
+        font-size: 2vh;
+    }
+}
+
+@media (max-width:375px){
+    button{
+        width: 10vh;
+        height: 10vh;
+        transition: 0.3s;
+        
+    }
+    .core{
+        height: 43.5vh;
+        width: 43.5vh;
+        transition: 0.3s;
+    }
+    .abdiel, .emma, .kevin, .sam, .dimy, .jonathan, .souhir, .luke{
+        background-size: 10vh;
+    }
+    #display{
+        font-size: 1.8vh;
     }
 }

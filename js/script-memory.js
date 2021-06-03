@@ -46,42 +46,36 @@ var dimy = 0;
 function clik(number){
     var carteselec = document.getElementById("c"+number);
 
+    if (carteselec.className.match('luke') && carteselec.className.match('hide')){
+        luke++;
+        console.log("luke: " +luke);
+    } else if (carteselec.className.match('abdiel') && carteselec.className.match('hide')){
+        abdiel++;
+        console.log("abdiel: "+ abdiel);
+    } else if (carteselec.className.match('souhir') && carteselec.className.match('hide')){
+        souhir++;
+        console.log("souhir: "+souhir);
+    } else if (carteselec.className.match('sam') && carteselec.className.match('hide')){
+        sam++;
+        console.log("sam: "+sam);
+    }else if (carteselec.className.match('kevin') && carteselec.className.match('hide')){
+        kevin++;
+        console.log('kevin: '+kevin);
+    } else if (carteselec.className.match('jonathan') && carteselec.className.match('hide')){
+        jonathan++;
+        console.log("jonathan: "+jonathan);
+    }else if (carteselec.className.match('emma') && carteselec.className.match('hide')){
+        emma++;
+        console.log("emma: "+emma);
+    }else if (carteselec.className.match('dimy') && carteselec.className.match('hide')){
+        dimy++;
+        console.log("dimy: "+dimy);
+    }
     if (carteselec.className.match('hide')){
         carteselec.classList.remove('hide');
         nombreEssais++;
-        display("Nombre de coups: " + nombreEssais /2)
-    }
-    if (carteselec.className.match('luke')){
-        luke++;
-        console.log("luke: " +luke);
-    }
-    if (carteselec.className.match('abdiel')){
-        abdiel++;
-        console.log("abdiel: "+ abdiel);
-    }
-    if (carteselec.className.match('souhir')){
-        souhir++;
-        console.log("souhir: "+souhir);
-    }
-    if (carteselec.className.match('sam')){
-        sam++;
-        console.log("sam: "+sam);
-    }
-    if (carteselec.className.match('kevin')){
-        kevin++;
-        console.log('kevin: '+kevin);
-    }
-    if (carteselec.className.match('jonathan')){
-        jonathan++;
-        console.log("jonathan: "+jonathan);
-    }
-    if (carteselec.className.match('emma')){
-        emma++;
-        console.log("emma: "+emma);
-    }
-    if (carteselec.className.match('dimy')){
-        dimy++;
-        console.log("dimy: "+dimy);
+        display("coups: " + nombreEssais /2 + " | cartes: " + ranPlace.length/2+ "/8");
+
     }
 
     var delay = 2000; 
